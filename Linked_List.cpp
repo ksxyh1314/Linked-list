@@ -62,3 +62,24 @@ Status GetElem_L(LinkList L, int i, ElemType &e) {
     e=p->data;
     return OK;
 }
+LNode *LocateElem_L(LinkList L, int i, ElemType e) {
+    LNode *p=L->next;
+    while (p&&p->data!=e) {
+        p=p->next;
+    }
+    return p;
+}
+int LocateElem_L1(LinkList L, int i, ElemType e) {
+    LNode *p=L->next;
+    int j=1;
+    while (p&&p->data!=e) {
+        p=p->next;
+        ++j;
+    }
+    if (p) {
+        return j;
+    }
+    else {
+        return 0;
+    }
+}

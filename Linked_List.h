@@ -25,5 +25,8 @@ void DestroyList_L(LinkList &L);
 void ClearList_L(LinkList &L);
 int GetLength_L(LinkList L);
 Status GetElem_L(LinkList L, int i, ElemType &e);
+LNode *LocateElem_L(LinkList L, int i, ElemType e);
+int LocateElem_L1(LinkList L, int i, ElemType e);
+
 #endif //LINKED_LIST_H
 
