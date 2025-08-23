@@ -83,3 +83,14 @@ int LocateElem_L1(LinkList L, int i, ElemType e) {
         return 0;
     }
 }
+Status ListInsert_L(LinkList &L, int i, ElemType e) {
+    LinkList p=L;
+    int j=0;
+    while (p&&j<i-1) {p=p->next;++j;}
+    if (!p||j>i-1)return ERROR;
+    LNode *s = new LNode;
+    s->data=e;
+    s->next=p->next;
+    p->next=s;
+    return OK;
+}
