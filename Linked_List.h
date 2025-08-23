@@ -30,5 +30,6 @@ int LocateElem_L1(LinkList L, int i, ElemType e);
 Status ListInsert_L(LinkList &L, int i, ElemType e);
 Status ListDelete_L(LinkList &L, int i, ElemType &e);
 void CreateList_L(LinkList &L, int n);
+void CreateList1_L(LinkList &L, int n);
 #endif //LINKED_LIST_H
 

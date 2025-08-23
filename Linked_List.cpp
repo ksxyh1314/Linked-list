@@ -115,3 +115,14 @@ void CreateList_L(LinkList &L, int n) {
         L->next=p;
     }
 }
+void CreateList1_L(LinkList &L, int n) {
+    L=new LNode;
+    L->next=nullptr;
+    LNode *r=L;
+    for (int i=0;i<n;i++) {
+        LNode* p=new LNode;
+        p->next=nullptr;
+        r->next=p;
+        r=p;
+    }
+}
