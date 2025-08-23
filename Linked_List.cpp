@@ -105,3 +105,13 @@ Status ListDelete_L(LinkList &L, int i, ElemType &e) {
     delete q;
     return OK;
 }
+void CreateList_L(LinkList &L, int n) {
+    L=new LNode;
+    L->next=nullptr;
+    for (int i=n;i>0;--i) {
+        LNode* p=new LNode;
+        std::cin>>p->data;
+        p->next=L->next;
+        L->next=p;
+    }
+}
