@@ -14,4 +14,6 @@ add_executable(LinearListDemo
         list.h
         list.cpp
         Linked_List.h
-        Linked_List.cpp)
+        Linked_List.cpp
+        DoublyLinked_List.h
+        DoublyLinked_List.cpp)
