@@ -1,6 +1,6 @@
 
 #ifndef DOUBLYLINKED_LIST_H
-#define DOUBLYLINKED_LIST_H
+
 #pragma once
 #include <iostream>
 #define TRUE 1
